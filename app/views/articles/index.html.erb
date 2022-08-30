@@ -1,0 +1,19 @@
+
+
+
+<h1 class="text-center mt-5">View Articles</h1>
+
+<div class="container">
+  <% @articles.each do |article| %>
+  <div class="card ftn mt-5">
+   <%= image_tag article.avatar, :class=>"card-img-top"  if article.avatar.attached? %>
+   <div class="card-body">
+    <%= link_to article.title, article %>
+  </div></div>
+
+  <% end %>
+
+<div class="mt-5 text-center">
+  <%= link_to "New Article..", new_article_path %>
+</div>
+</div>
