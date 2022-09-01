@@ -20,6 +20,7 @@ gem "importmap-rails"
 
 gem 'pry', '~> 0.13.1'
 
+gem 'hirb', '~> 0.7.3'
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
