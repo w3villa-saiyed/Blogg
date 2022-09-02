@@ -11,13 +11,14 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-    # binding.pry
   end        
 
   def create
     
     @article = Article.new(article_params)
     # binding.pry
+    @article.account = current_account
+    
     if @article.save
       redirect_to root_path
     else

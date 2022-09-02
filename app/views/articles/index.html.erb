@@ -27,6 +27,9 @@
    <%= image_tag article.avatar, :class=>"card-img-top"  if article.avatar.attached? %>
    <div class="card-body">
     <%= link_to article.title, article %>
+    <small>Created by: <%= article.account.email if article.account %>,
+      <%= time_ago_in_words(article.created_at) %> ago, 
+      last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
   </div></div>
 
   <% end %>
