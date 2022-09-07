@@ -20,21 +20,34 @@
 <div class="continer text-center">
   <p>Welcome! <%=  current_account.email  %></p>
 </div>
-
-<div class="container">
-  <% @articles.each do |article| %>
-  <div class="card ftn mt-5">
-   <%= image_tag article.avatar, :class=>"card-img-top"  if article.avatar.attached? %>
-   <div class="card-body">
-    <%= link_to article.title, article %>
-    <small>Created by: <%= article.account.email if article.account %>,
-      <%= time_ago_in_words(article.created_at) %> ago, 
-      last updated: <%= time_ago_in_words(article.updated_at) %> ago</small>
-  </div></div>
-
-  <% end %>
-
 <div class="mt-5 text-center">
   <%= link_to "New Article..", new_article_path %>
 </div>
-</div>
+  </div>
+    </div>
+  </)  an class="badge bg-primary rounded-p"><%= article.category.artic    t  %></span></li>
+                 <% end %>
+      </div>
+    </div>
+
+    <div class="col-4 mt-5">
+      <% @articl   do |article| %>
+      <d    card ftn mt-5">
+        <%= link_to articl          <%= image_tag article.avatar, :class=>"card-img-top"  if artic      tached? %>
+
+        <div class="card-body">
+             to article.title, article %><br>
+          <small>Created by: <%= artic  .email if art  nt %>,
+  
+   %= time_ae"></i>      </button>
+        </div>
+          </li>
+          <li class="list-group-item text-primary">More....</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
